@@ -39,7 +39,7 @@ class StoresListViewModel(
 
                 if (result is AppResult.Success) {
                     val stores = result.successData
-                    _listOfStores.value = stores
+                   if(stores.stores != null && stores.stores!!.isNotEmpty()) _listOfStores.value = stores else _error.value = "No stores found"
                 } else if (result is AppResult.Error) {
                     _error.value = result.message ?: result.exception.message
                 }

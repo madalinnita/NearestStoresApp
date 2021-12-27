@@ -20,20 +20,4 @@ data class Store @JvmOverloads constructor(
     var postalCode: String? = null,
     @field:Element(name = "city")
     var city: String? = null,
-    @field:Element(name = "distributorId")
-    var distributorId: String? = null,
-//    @field:Element(name = "contry")
-//    var country: String? = null,
-    @field:Element(name = "posTypeLogo")
-    var posTypeLogo: String? = null,
-    @field:Element(name = "productLogo")
-    var productLogo: String? = null,
-//    @field:Element(name = "specialText")
-//    var specialText: String? = null,
-    @field:Element(name = "recommended")
-    var recommended: String? = null,
-    @field:Element(name = "directload")
-    var directload: String? = null,
-    @field:Element(name = "mdirectload")
-    var mdirectload: String? = null
 )
